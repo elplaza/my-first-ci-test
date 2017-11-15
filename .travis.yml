@@ -1,13 +1,13 @@
 language: php
 
 php:
-  - 7
+  - nightly
 
-before_script:
-  - composer self-update
-  - composer install
+#before_script:
+#  - composer self-update
+#  - composer install
 
-script: ./vendor/bin/phpunit tests/
+script: phpunit tests/
 
 matrix:
   fast_finish: true
