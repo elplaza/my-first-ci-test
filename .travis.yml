@@ -3,9 +3,9 @@ language: php
 php:
   - nightly
 
-#before_script:
+before_script:
 #  - composer self-update
-#  - composer install
+  - composer install
 
 script: phpunit tests/
 
