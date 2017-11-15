@@ -2,7 +2,11 @@
 
 namespace Films\Tests\Action;
 
-class JohnWickTest extends \PHPUnit_Framework_TestCase
+class JohnWickTest extends \PHPUnit\Framework\TestCase
 {
 
+    public function testClassExistence()
+    {
+        $this->assertInstanceOf(\Films\Action\JohnWick::class, new \Films\Action\JohnWick());
+    }
 }
